@@ -8,6 +8,6 @@ Today, the RTS,S malaria vaccine only provides partial protection (~$36%) agains
 ## Resources
 - HaplotypR pacakge: https://github.com/lerch-a/HaplotypR
 - NetChop 3.1 Server: http://www.cbs.dtu.dk/services/NetChop/
-- Peptide Builder package: https://github.com/clauswilke/peptidebuilder
+- PeptideBuilder package: https://github.com/clauswilke/peptidebuilder
 - HADDOCK Server: https://wenmr.science.uu.nl/haddock2.4/
 - PyMol: https://pymol.org/
