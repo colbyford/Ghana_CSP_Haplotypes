@@ -1,0 +1,55 @@
+Swarm 3.0.0
+Copyright (C) 2012-2020 Torbjorn Rognes and Frederic Mahe
+https://github.com/torognes/swarm
+
+Mahe F, Rognes T, Quince C, de Vargas C, Dunthorn M (2014)
+Swarm: robust and fast clustering method for amplicon-based studies
+PeerJ 2:e593 https://doi.org/10.7717/peerj.593
+
+Mahe F, Rognes T, Quince C, de Vargas C, Dunthorn M (2015)
+Swarm v2: highly-scalable and high-resolution amplicon clustering
+PeerJ 3:e1420 https://doi.org/10.7717/peerj.1420
+
+CPU features:      mmx sse sse2 sse3 ssse3 sse4.1 sse4.2 popcnt avx avx2
+Database file:     output//frequencyFiles/csp/027-2_S23_L001_csp_NGmerge_hapFreq.fa
+Output file:       output//cluster/csp/027-2_S23_L001_csp_NGmerge.swarms
+Statistics file:   output//cluster/csp/027-2_S23_L001_csp_NGmerge.stats.txt
+Int. struct. file  output//cluster/csp/027-2_S23_L001_csp_NGmerge.struct
+Resolution (d):    1
+Threads:           1
+Break OTUs:        Yes
+Fastidious:        Yes, with boundary 3
+
+Reading sequences: 100%
+Indexing database: 100%
+Abundance sorting: 100%
+Database info:     2942837 nt in 8994 sequences, longest 332 nt
+Hashing sequences: 100%
+Building network:  100%
+Clustering:        100%
+
+Results before fastidious processing:
+Number of swarms:  1709
+Largest swarm:     7235
+
+Counting amplicons in heavy and light swarms 100%
+Heavy swarms: 14, with 7298 amplicons
+Light swarms: 1695, with 1696 amplicons
+Total length of amplicons in light swarms: 553663
+Bloom filter: bits=16, m=62010256, k=6, size=7.4MB
+Adding light swarm amplicons to Bloom filter 100%
+Generated 3701030 variants from light swarms
+Checking heavy swarm amplicons against Bloom filter 100%
+Heavy variants: 15968322
+Got 8731 graft candidates
+Grafting light swarms on heavy swarms 100%
+Made 1350 grafts
+
+Writing swarms:    100%
+Writing seeds:     100%
+Writing structure: 100%
+Writing stats:     100%
+
+Number of swarms:  359
+Largest swarm:     8572
+Max generations:   4
