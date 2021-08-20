@@ -37,3 +37,5 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+sequence_analysis/protein/old/*
+sequence_analysis/protein/~Figures__1952.twbr
