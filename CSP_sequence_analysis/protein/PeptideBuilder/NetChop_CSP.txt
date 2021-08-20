@@ -1,0 +1,282 @@
+http://www.cbs.dtu.dk/services/NetChop-3.1/output.phpNetChop 3.0 predictions using version 20S. Threshold 0.500000
+
+109 csp_refere
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDKHIEQYLKKIQNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDELDYEN
+..S..S..S..S....S...S.SS......S..SS.....SSS.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 39. Number of amino acids 109. Protein name csp_refere
+
+--------------------------------------
+109 csp-1
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDQHIEKYLKTIQNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDQLDYAN
+..S..S..S..S....S...S.SS......S...S..S..SSS.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 39. Number of amino acids 109. Protein name csp-1
+
+--------------------------------------
+109 csp-4
+HNMPNDPNRNVDENANANSAVKNNNNEEPSDKHIKEYLNKIQNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDELDYAN
+..S..S..S..S........S.SS......S..S.SS...SSS.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 39. Number of amino acids 109. Protein name csp-4
+
+--------------------------------------
+109 csp-7
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDKHIEQYLKTIKNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDQLDYAN
+..S..S..S..S....S...S.SS......S..SS..S..S.S.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 39. Number of amino acids 109. Protein name csp-7
+
+--------------------------------------
+109 csp-8
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDQHIEKYLKTIKNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDQLDYAN
+..S..S..S..S....S...S.SS......S...S..S..S.S.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 38. Number of amino acids 109. Protein name csp-8
+
+--------------------------------------
+109 csp-10
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDKHIEQYLKTIKNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDELDYEN
+..S..S..S..S....S...S.SS......S..SS..S..S.S.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 39. Number of amino acids 109. Protein name csp-10
+
+--------------------------------------
+109 csp-11
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDKHIEQYLKTIKNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDELDYAN
+..S..S..S..S....S...S.SS......S..SS..S..S.S.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 39. Number of amino acids 109. Protein name csp-11
+
+--------------------------------------
+109 csp-12
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDQHIEKYLKIIQNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDQLDYAN
+..S..S..S..S....S...S.SS......S...S..S.SSSS.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 40. Number of amino acids 109. Protein name csp-12
+
+--------------------------------------
+109 csp-15
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDQHIEKYLNKIKNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDQLDYAN
+..S..S..S..S....S...S.SS......S...S.SS..S...S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 38. Number of amino acids 109. Protein name csp-15
+
+--------------------------------------
+109 csp-16
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDKHITEYLKKIKNSISTEWSPCSVTCGNGIQVRIKPGSANKPKDELDYEN
+..S..S..S..S....S...S.SS......S..SSS.S..S...S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 39. Number of amino acids 109. Protein name csp-16
+
+--------------------------------------
+109 csp-18
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDQHIEKYLKKIQNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDQLDYAN
+..S..S..S..S....S...S.SS......S...S..S..SSS.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 39. Number of amino acids 109. Protein name csp-18
+
+--------------------------------------
+109 csp-19
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDKHIEQYLKKIKNSISTEWSPCSVTCGNGIQVRIKPGSANKPKDQLDYAN
+..S..S..S..S....S...S.SS......S..SS.....S...S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 37. Number of amino acids 109. Protein name csp-19
+
+--------------------------------------
+109 csp-22
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDKHITEYLKRIQNSLSTEWSPCSVTCGNGIQVRIKPGSAGKSKNELDYEN
+..S..S..S..S....S...S.SS......S..SSS.S.SSSS.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 42. Number of amino acids 109. Protein name csp-22
+
+--------------------------------------
+109 csp-27
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDKHIEQYLKTIKNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDELNYEN
+..S..S..S..S....S...S.SS......S..SS..S..S.S.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 39. Number of amino acids 109. Protein name csp-27
+
+--------------------------------------
+109 csp-31
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDKHIEQYLKKIKNSISTEWSPCSVTCGNGIQVRIKPGSANKPKDELDYEN
+..S..S..S..S....S...S.SS......S..SS.....S...S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 37. Number of amino acids 109. Protein name csp-31
+
+--------------------------------------
+109 csp-32
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDKHIEQYLKIIKNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDQLDYAN
+..S..S..S..S....S...S.SS......S..SS.SS..S.S.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 40. Number of amino acids 109. Protein name csp-32
+
+--------------------------------------
+109 csp-35
+HNMPNDPNRNVDENAKANNAVKNNNNEEPSDKHIEQYLKTIQNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDQLDYEN
+..S..S..S..S....S...S.SS......S..SS..S..SSS.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 40. Number of amino acids 109. Protein name csp-35
+
+--------------------------------------
+109 csp-36
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDQHIEKYLKIIKNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDQLDYAN
+..S..S..S..S....S...S.SS......S...S..S..S.S.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 38. Number of amino acids 109. Protein name csp-36
+
+--------------------------------------
+109 csp-39
+HNMPNDPNRNVDENAKANNAVKNNNNEEPSDKHIEQYLKTIQNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDELDYAN
+..S..S..S..S....S...S.SS......S..SS..S..SSS.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 40. Number of amino acids 109. Protein name csp-39
+
+--------------------------------------
+109 csp-46
+HNMPNDPNRNVDENANANSAVKNNNNEEPSDKHIKEYLNKIQNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDQLDYEN
+..S..S..S..S........S.SS......S..S.SS...SSS.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 39. Number of amino acids 109. Protein name csp-46
+
+--------------------------------------
+109 csp-47
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDKHIEQYLNKIKNSISTEWSPCSVTCGNGIQVRIKPGSANKPKDELNYEN
+..S..S..S..S....S...S.SS......S..SSSS...S...S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 39. Number of amino acids 109. Protein name csp-47
+
+--------------------------------------
+109 csp-53
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDKHIEQYLNKIKNSISTEWSPCSVTCGNGIQVRIKPGSANKPKDQLDYAN
+..S..S..S..S....S...S.SS......S..SSSS...S...S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 39. Number of amino acids 109. Protein name csp-53
+
+--------------------------------------
+109 csp-55
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDKHIEQYLKRIQNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDELDYAN
+..S..S..S..S....S...S.SS......S..SS.SS.SSSS.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 42. Number of amino acids 109. Protein name csp-55
+
+--------------------------------------
+109 csp-68
+HNMPNDPNRNVNENANANNAVKNNNNEEPSDKHIEKYLKEIQNSLSTEWSPCSVTCGNGIQVRIKPGSAGKPKNELDYEN
+..S..S..S.S.S...S...S.SS......S...S..S.SS.S.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 40. Number of amino acids 109. Protein name csp-68
+
+--------------------------------------
+109 csp-94
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDKHIEQYLKIIQNSLSTEWSPCSVTCGNGIQVRIKPGSADKPKDQLDYAN
+..S..S..S..S....S...S.SS......S..SS.SS.SSSS.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 42. Number of amino acids 109. Protein name csp-94
+
+--------------------------------------
+109 csp-99
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDKHIEQYLKTIKNSLSTEWSPCSVTCGNGIQVRIKPGSAGKSKNELDYEN
+..S..S..S..S....S...S.SS......S..SS..S..S.S.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 39. Number of amino acids 109. Protein name csp-99
+
+--------------------------------------
+109 csp-111
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDQHIEKYLKKIQNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDQLNYEN
+..S..S..S..S....S...S.SS......S...S..S..SSS.S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 39. Number of amino acids 109. Protein name csp-111
+
+--------------------------------------
+109 csp-117
+HNMPNDPNRNVDENANANNAVKNNNNEEPSDQHIEKYLKKIKNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDQLNYEN
+..S..S..S..S....S...S.SS......S...S..S..S...S.S.S....S.SS....S.S..........SS.SS.
+DIEKKICKMEKCSSVFNVVNSSIGLIMVL
+......S..S..S.SS.SS.S...SSSSS
+--------------------------------------
+
+Number of cleavage sites 37. Number of amino acids 109. Protein name csp-117
+
+--------------------------------------
