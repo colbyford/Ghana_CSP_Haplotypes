@@ -32,3 +32,7 @@ Today, the RTS,S malaria vaccine only provides partial protection (~36%) against
 - PeptideBuilder package: https://github.com/clauswilke/peptidebuilder
 - HADDOCK Server: https://wenmr.science.uu.nl/haddock2.4/
 - PyMol: https://pymol.org/
+- PDB Structures:
+  - HLA-DR: [`6V1A`](https://www.rcsb.org/structure/6V1A)
+  - HLA-A2*01: [`6TRN`](https://www.rcsb.org/structure/6TRN)
+  - TCR T594: [`6PY2`](https://www.rcsb.org/structure/6py2)
