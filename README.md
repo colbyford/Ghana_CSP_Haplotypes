@@ -3,6 +3,7 @@
 <p align="right">Cheikh Cambel Dieng, Colby T. Ford, Dickson Doniou, Jennifer Huynh, Kovidh Vegesna, <br>Anita Lerch, Daniel Janies, Linda Amoah, Yaw Afrane, and Eugenia Lo</p>
 
 ## Abstract
+
 Today, the RTS,S malaria vaccine only provides partial protection (~36%) against _Plasmodium falciparum_ in certain sub-Saharan African countries such as Ghana, though this vaccine previously showed efficacy well above 60\% in previous clinical trials. Our study analyzes the diversity of the _PfCSP_ gene across 88 samples from Ghana and we have derived 27 prevalent haplotypes. We further investigated these haplotypes by understanding how variations in this gene affect protein binding interactions with human immunological proteins (a human leukocyte antigen and a T-cell receptor). By predicting and quantifying these interactions, we can then better understand variations in vaccine efficacy and posit sequence options for next-generation malaria vaccine design.
 
 <p align="middle"><img src="https://raw.githubusercontent.com/colbyford/Ghana_CSP_Haplotypes/main/CSP_sequence_analysis/protein/CD4_Th2R/renderings/HLA-TCR_csp-reference.png?token=AA5DFSEETVNQVNYZHOBIZH3BFODPQ" width="500"></p>
