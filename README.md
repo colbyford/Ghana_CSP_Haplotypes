@@ -10,6 +10,7 @@ Today, the RTS,S malaria vaccine only provides partial protection (~36%) against
 <p align="middle"><img src="https://raw.githubusercontent.com/colbyford/Ghana_CSP_Haplotypes/main/CSP_sequence_analysis/protein/CD4_Th2R/renderings/HLA-TCR_csp-reference.png?token=AA5DFSEETVNQVNYZHOBIZH3BFODPQ" width="500"></p>
 
 
+
 ## Process
 
 <p align="middle"><img src="https://raw.githubusercontent.com/colbyford/Ghana_CSP_Haplotypes/main/CSP_sequence_analysis/figures/process_v2.png?token=AA5DFSDAA4WQSBSVMRQESMLBFODDA" width="500"></p>
