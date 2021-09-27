@@ -15,6 +15,7 @@ Today, the RTS,S malaria vaccine only provides partial protection (~36%) against
 <p align="middle"><img src="https://raw.githubusercontent.com/colbyford/Ghana_CSP_Haplotypes/main/CSP_sequence_analysis/figures/process_v2.png" width="500"></p>
 
 ## Summarized Table of Contents
+
 - [CSP_sequence_analysis/](CSP_sequence_analysis/)
   - Final List of CSP Haplotypes (SNP-based): [finalTab_csp.csv](/CSP_sequence_analysis/finalTab_csp.csv)
   - Haplotype Creation Script: [MalariaHaplotyping_NGmerge_script.R](/CSP_sequence_analysis/MalariaHaplotyping_NGmerge_script.R)
@@ -30,6 +31,7 @@ Today, the RTS,S malaria vaccine only provides partial protection (~36%) against
   -  Multiplicity of Infection by Sample: [MSP-CSP_mMOI_Comparison.xlsx](/CSP-MSP1_Comparison/MSP-CSP_mMOI_Comparison.xlsx)
 
 ## Resources
+
 - HaplotypR pacakge: https://github.com/lerch-a/HaplotypR
 - NetChop 3.1 Server: http://www.cbs.dtu.dk/services/NetChop/
 - PeptideBuilder package: https://github.com/clauswilke/peptidebuilder
