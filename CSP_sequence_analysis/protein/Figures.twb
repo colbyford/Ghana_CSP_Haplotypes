@@ -3008,8 +3008,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='21' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97334' id='20' param='vert' type='layout-flow' w='98666' x='667' y='1333'>
+            <zone h='100000' id='23' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97334' id='22' param='vert' type='layout-flow' w='98666' x='667' y='1333'>
                 <zone fixed-size='280' h='97334' id='3' is-fixed='true' name='HADDOCK Score Correlation' show-title='false' w='98666' x='667' y='1333'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3079,8 +3079,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='23' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98666' id='22' param='vert' type='layout-flow' w='98222' x='889' y='667'>
+            <zone h='100000' id='25' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98666' id='24' param='vert' type='layout-flow' w='98222' x='889' y='667'>
                 <zone fixed-size='280' h='98666' id='3' is-fixed='true' name='Peptide Comparison' show-title='false' w='98222' x='889' y='667'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3144,8 +3144,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='37' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98666' id='36' param='vert' type='layout-flow' w='96800' x='1600' y='667'>
+            <zone h='100000' id='39' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98666' id='38' param='vert' type='layout-flow' w='96800' x='1600' y='667'>
                 <zone fixed-size='280' h='98666' id='3' is-fixed='true' name='Th2R -  Peptide Contains Q' show-title='false' w='48399' x='1600' y='667'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3206,8 +3206,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='19' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97714' id='18' param='vert' type='layout-flow' w='98400' x='800' y='1143'>
+            <zone h='100000' id='21' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97714' id='20' param='vert' type='layout-flow' w='98400' x='800' y='1143'>
                 <zone fixed-size='280' h='97714' id='3' is-fixed='true' name='Th2R - Peptide Weight vs HADDOCK Score' show-title='false' w='98400' x='800' y='1143'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3259,8 +3259,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='9' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97334' id='8' param='vert' type='layout-flow' w='98400' x='800' y='1333'>
+            <zone h='100000' id='11' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97334' id='10' param='vert' type='layout-flow' w='98400' x='800' y='1333'>
                 <zone fixed-size='280' h='97334' id='3' is-fixed='true' name='Th2R - Peptide Weight vs HADDOCK Score (HLA-CSP)' show-title='false' w='98400' x='800' y='1333'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3312,8 +3312,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='9' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97334' id='8' param='vert' type='layout-flow' w='98400' x='800' y='1333'>
+            <zone h='100000' id='11' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97334' id='10' param='vert' type='layout-flow' w='98400' x='800' y='1333'>
                 <zone fixed-size='280' h='97334' id='3' is-fixed='true' name='Th2R - Peptide Weight vs HADDOCK Score (HLA-CSP-TCR)' show-title='false' w='98400' x='800' y='1333'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
