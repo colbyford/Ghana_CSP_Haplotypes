@@ -36,9 +36,16 @@ HADDOCK_data <- read_xlsx("../CSP_sequence_analysis/protein/HADDOCK_Results.xlsx
   rename(HLA_TCR_HADDOCK = `HLA-TCR \r\nHADDOCK score`)
 
 
+######
 
 comparison_data <- CSP_data %>%
   inner_join(antibody_data, by = "SampleID") %>% 
   mutate(weighted_avg_conc = expression * as.numeric(`Avg Conc`)) %>% 
   inner_join(HADDOCK_data, by = "Haplotype") %>% 
   filter(expression > 0)
+
+write_csv(comparison_data, "antibody_conc_HADDOCK_comparison.csv")
+
+# 
+# HLA_CSP_model <- lm(HLA_CSP_HADDOCK ~ weighted_avg_conc, data = comparison_data)
+# HLA_TCR_model <- lm(HLA_TCR_HADDOCK ~ weighted_avg_conc, data = comparison_data)
