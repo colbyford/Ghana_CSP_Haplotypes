@@ -22,16 +22,23 @@ CSP_data <- read_csv("../CSP_sequence_analysis/finalTab_csp.csv") %>%
   mutate(percentage = value/sum(value)) %>% 
   select(-value) %>% 
   spread(variable, percentage) %>% 
-  # ungroup(SampleID) %>% 
+  ungroup(SampleID) %>% 
   # mutate(TotalReads = rowSums(select_if(., is.numeric), na.rm = TRUE))
+  pivot_longer(cols = starts_with("csp-"), names_to = "Haplotype", values_to = "expression")
 
 
 
-gather(variable, value, -id) %>% 
-  group_by(id) %>% 
-  mutate(percentage = value/sum(value)) %>% 
-  select(-value) %>% 
-  spread(variable, percentage)
+HADDOCK_data <- read_xlsx("../CSP_sequence_analysis/protein/HADDOCK_Results.xlsx") %>% 
+  filter(Region == "Th2R") %>% 
+  select(`CSP Peptide`, `HLA-CSPpep\r\nHADDOCK score`, `HLA-TCR \r\nHADDOCK score`) %>%
+  rename(Haplotype = `CSP Peptide`) %>% 
+  rename(HLA_CSP_HADDOCK = `HLA-CSPpep\r\nHADDOCK score`) %>% 
+  rename(HLA_TCR_HADDOCK = `HLA-TCR \r\nHADDOCK score`)
 
 
-HADDOCK_data <- read_xlsx("../CSP_sequence_analysis/protein/HADDOCK_Results.xlsx")
+
+comparison_data <- CSP_data %>%
+  inner_join(antibody_data, by = "SampleID") %>% 
+  mutate(weighted_avg_conc = expression * as.numeric(`Avg Conc`)) %>% 
+  inner_join(HADDOCK_data, by = "Haplotype") %>% 
+  filter(expression > 0)
