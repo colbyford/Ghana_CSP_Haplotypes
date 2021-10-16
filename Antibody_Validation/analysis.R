@@ -1,13 +1,22 @@
 library(dplyr)
+library(tidyr)
 library(readr)
 library(readxl)
 library(stringr)
 
 antibody_data <- read_xls("csp antibody data.xls", sheet = "Samples All") %>%
-  select(`Sample Name`, `Avg Conc`) %>% 
-  filter(! `Sample Name` %in% c('no sample'))
+  filter(! `Sample Name` %in% c('no sample')) %>% 
+  mutate(SampleID = tolower(`Sample Name`)) %>% 
+  select(SampleID, `Avg Conc`)
 
 
 CSP_data <- read_csv("../CSP_sequence_analysis/finalTab_csp.csv") %>% 
   select(SampleID, Haplotype, Reads) %>% 
-  filter(! Haplotype %in% c("Chimera", "Indels", "Noise", "Singelton"))
+  filter(! Haplotype %in% c("Chimera", "Indels", "Noise", "Singelton")) %>% 
+  pivot_wider(names_from = "Haplotype", values_from = "Reads", values_fill = 0) %>% 
+  mutate(SampleID = str_split(SampleID, "-", n = 2) %>% sapply(head, 1)) %>% 
+  filter(SampleID %in% antibody_data$SampleID) %>% 
+  mutate(TotalReads = rowSums(select_if(., is.numeric), na.rm = TRUE))
+
+
+HADDOCK_data <- read_xlsx("../CSP_sequence_analysis/protein/HADDOCK_Results.xlsx")
