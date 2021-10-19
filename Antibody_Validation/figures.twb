@@ -1,0 +1,958 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0614.2321                               -->
+<workbook original-version='18.1' source-build='2020.1.5 (20201.20.0614.2321)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='antibody_conc_HADDOCK_comparison' inline='true' name='federated.16opmgt1yru5iq1auel1y0quayui' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='antibody_conc_HADDOCK_comparison' name='textscan.1nzsw9f03wtte115hgr5t00loe89'>
+            <connection class='textscan' directory='C:/Users/Colby/Documents/GitHub/Ghana_CSP_Haplotypes/Antibody_Validation' filename='antibody_conc_HADDOCK_comparison.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1nzsw9f03wtte115hgr5t00loe89' name='antibody_conc_HADDOCK_comparison.csv' table='[antibody_conc_HADDOCK_comparison#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='SampleID' ordinal='0' />
+            <column datatype='string' name='Haplotype' ordinal='1' />
+            <column datatype='real' name='expression' ordinal='2' />
+            <column datatype='integer' name='moi' ordinal='3' />
+            <column datatype='real' name='Avg Conc' ordinal='4' />
+            <column datatype='real' name='weighted_avg_conc' ordinal='5' />
+            <column datatype='real' name='HLA_CSP_HADDOCK' ordinal='6' />
+            <column datatype='real' name='HLA_TCR_HADDOCK' ordinal='7' />
+            <column datatype='real' name='weighted_avg_HLA_CSP_HADDOCK' ordinal='8' />
+            <column datatype='real' name='weighted_avg_HLA_TCR_HADDOCK' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[antibody_conc_HADDOCK_comparison.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SampleID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SampleID]</local-name>
+            <parent-name>[antibody_conc_HADDOCK_comparison.csv]</parent-name>
+            <remote-alias>SampleID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Haplotype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Haplotype]</local-name>
+            <parent-name>[antibody_conc_HADDOCK_comparison.csv]</parent-name>
+            <remote-alias>Haplotype</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>expression</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[expression]</local-name>
+            <parent-name>[antibody_conc_HADDOCK_comparison.csv]</parent-name>
+            <remote-alias>expression</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>moi</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[moi]</local-name>
+            <parent-name>[antibody_conc_HADDOCK_comparison.csv]</parent-name>
+            <remote-alias>moi</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg Conc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg Conc]</local-name>
+            <parent-name>[antibody_conc_HADDOCK_comparison.csv]</parent-name>
+            <remote-alias>Avg Conc</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weighted_avg_conc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[weighted_avg_conc]</local-name>
+            <parent-name>[antibody_conc_HADDOCK_comparison.csv]</parent-name>
+            <remote-alias>weighted_avg_conc</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HLA_CSP_HADDOCK</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HLA_CSP_HADDOCK]</local-name>
+            <parent-name>[antibody_conc_HADDOCK_comparison.csv]</parent-name>
+            <remote-alias>HLA_CSP_HADDOCK</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HLA_TCR_HADDOCK</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HLA_TCR_HADDOCK]</local-name>
+            <parent-name>[antibody_conc_HADDOCK_comparison.csv]</parent-name>
+            <remote-alias>HLA_TCR_HADDOCK</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weighted_avg_HLA_CSP_HADDOCK</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[weighted_avg_HLA_CSP_HADDOCK]</local-name>
+            <parent-name>[antibody_conc_HADDOCK_comparison.csv]</parent-name>
+            <remote-alias>weighted_avg_HLA_CSP_HADDOCK</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weighted_avg_HLA_TCR_HADDOCK</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[weighted_avg_HLA_TCR_HADDOCK]</local-name>
+            <parent-name>[antibody_conc_HADDOCK_comparison.csv]</parent-name>
+            <remote-alias>weighted_avg_HLA_TCR_HADDOCK</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Average Concentration' datatype='real' name='[Avg Conc]' role='measure' type='quantitative' />
+      <column caption='HLA-CSP HADDOCK (abs)' datatype='real' name='[Calculation_1369657266518065152]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ABS([HLA_CSP_HADDOCK])' />
+      </column>
+      <column caption='HLA-TCR HADDOCK (abs)' datatype='real' name='[HLA-CSP HADDOCK (abs) (copy)_1369657266518216705]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ABS([HLA_TCR_HADDOCK])' />
+      </column>
+      <column caption='HLA-CSP HADDOCK Score' datatype='real' name='[HLA_CSP_HADDOCK]' role='measure' type='quantitative' />
+      <column caption='HLA-TCR HADDOCK Score' datatype='real' name='[HLA_TCR_HADDOCK]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Haplotype]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Sample ID' datatype='string' name='[SampleID]' role='dimension' type='nominal' />
+      <column caption='Expression' datatype='real' name='[expression]' role='measure' type='quantitative' />
+      <column datatype='real' name='[weighted_avg_HLA_CSP_HADDOCK]' role='measure' type='quantitative' />
+      <column datatype='real' name='[weighted_avg_HLA_TCR_HADDOCK]' role='measure' type='quantitative' />
+      <column caption='Weighted Avg Conc' datatype='real' name='[weighted_avg_conc]' role='measure' type='quantitative' />
+      <column-instance column='[Avg Conc]' derivation='Avg' name='[avg:Avg Conc:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HLA_CSP_HADDOCK]' derivation='Avg' name='[avg:HLA_CSP_HADDOCK:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HLA_TCR_HADDOCK]' derivation='Avg' name='[avg:HLA_TCR_HADDOCK:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[weighted_avg_conc]' derivation='Avg' name='[avg:weighted_avg_conc:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Avg Conc]' derivation='Max' name='[max:Avg Conc:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HLA_CSP_HADDOCK]' derivation='Max' name='[max:HLA_CSP_HADDOCK:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HLA_TCR_HADDOCK]' derivation='Max' name='[max:HLA_TCR_HADDOCK:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HLA_CSP_HADDOCK]' derivation='Median' name='[med:HLA_CSP_HADDOCK:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Avg Conc]' derivation='Min' name='[min:Avg Conc:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HLA_CSP_HADDOCK]' derivation='Min' name='[min:HLA_CSP_HADDOCK:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HLA_TCR_HADDOCK]' derivation='Min' name='[min:HLA_TCR_HADDOCK:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[weighted_avg_conc]' derivation='Min' name='[min:weighted_avg_conc:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Avg Conc]' derivation='None' name='[none:Avg Conc:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HLA_CSP_HADDOCK]' derivation='None' name='[none:HLA_CSP_HADDOCK:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HLA_TCR_HADDOCK]' derivation='None' name='[none:HLA_TCR_HADDOCK:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Haplotype]' derivation='None' name='[none:Haplotype:nk]' pivot='key' type='nominal' />
+      <column-instance column='[SampleID]' derivation='None' name='[none:SampleID:nk]' pivot='key' type='nominal' />
+      <column-instance column='[weighted_avg_HLA_CSP_HADDOCK]' derivation='None' name='[none:weighted_avg_HLA_CSP_HADDOCK:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[weighted_avg_HLA_TCR_HADDOCK]' derivation='None' name='[none:weighted_avg_HLA_TCR_HADDOCK:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[weighted_avg_conc]' derivation='None' name='[none:weighted_avg_conc:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[weighted_avg_conc]' derivation='Sum' name='[sum:weighted_avg_conc:qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Exclusions (Avg Conc,Hla Tcr Haddock,Sample ID)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Avg Conc:qk]' />
+          <groupfilter function='level-members' level='[none:HLA_TCR_HADDOCK:qk]' />
+          <groupfilter function='level-members' level='[none:SampleID:nk]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Avg Conc,Sample ID)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Avg Conc:qk]' />
+          <groupfilter function='level-members' level='[none:SampleID:nk]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Avg Conc,Sample ID,weighted_avg_HLA_CSP_HADDOCK)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Avg Conc:qk]' />
+          <groupfilter function='level-members' level='[none:SampleID:nk]' />
+          <groupfilter function='level-members' level='[none:weighted_avg_HLA_CSP_HADDOCK:qk]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Avg Conc,Sample ID,weighted_avg_HLA_TCR_HADDOCK)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Avg Conc:qk]' />
+          <groupfilter function='level-members' level='[none:SampleID:nk]' />
+          <groupfilter function='level-members' level='[none:weighted_avg_HLA_TCR_HADDOCK:qk]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Haplotype,Hla Csp Haddock,Sample ID,Weighted Avg Conc)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Haplotype:nk]' />
+          <groupfilter function='level-members' level='[none:HLA_CSP_HADDOCK:qk]' />
+          <groupfilter function='level-members' level='[none:SampleID:nk]' />
+          <groupfilter function='level-members' level='[none:weighted_avg_conc:qk]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Haplotype,Hla Tcr Haddock,Sample ID,Weighted Avg Conc)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Haplotype:nk]' />
+          <groupfilter function='level-members' level='[none:HLA_TCR_HADDOCK:qk]' />
+          <groupfilter function='level-members' level='[none:SampleID:nk]' />
+          <groupfilter function='level-members' level='[none:weighted_avg_conc:qk]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Haplotype,Hla Tcr Haddock,Weighted Avg Conc)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Haplotype:nk]' />
+          <groupfilter function='level-members' level='[none:HLA_TCR_HADDOCK:qk]' />
+          <groupfilter function='level-members' level='[none:weighted_avg_conc:qk]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Sample ID,Weighted Avg Conc)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:SampleID:nk]' />
+          <groupfilter function='level-members' level='[none:weighted_avg_conc:qk]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.463605' measure-ordering='alphabetic' measure-percentage='0.536395' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.16opmgt1yru5iq1auel1y0quayui].[avg:HLA_CSP_HADDOCK:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.16opmgt1yru5iq1auel1y0quayui].[max:HLA_CSP_HADDOCK:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.16opmgt1yru5iq1auel1y0quayui].[med:HLA_CSP_HADDOCK:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.16opmgt1yru5iq1auel1y0quayui].[min:HLA_CSP_HADDOCK:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.16opmgt1yru5iq1auel1y0quayui].[none:HLA_CSP_HADDOCK:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.16opmgt1yru5iq1auel1y0quayui].[avg:Avg Conc:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.16opmgt1yru5iq1auel1y0quayui].[max:Avg Conc:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.16opmgt1yru5iq1auel1y0quayui].[min:Avg Conc:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.16opmgt1yru5iq1auel1y0quayui].[avg:weighted_avg_conc:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.16opmgt1yru5iq1auel1y0quayui].[min:weighted_avg_conc:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.16opmgt1yru5iq1auel1y0quayui].[none:weighted_avg_conc:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.16opmgt1yru5iq1auel1y0quayui].[sum:weighted_avg_conc:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.16opmgt1yru5iq1auel1y0quayui]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.16opmgt1yru5iq1auel1y0quayui].[avg:HLA_TCR_HADDOCK:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.16opmgt1yru5iq1auel1y0quayui].[max:HLA_TCR_HADDOCK:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.16opmgt1yru5iq1auel1y0quayui].[min:HLA_TCR_HADDOCK:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.16opmgt1yru5iq1auel1y0quayui].[none:HLA_TCR_HADDOCK:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:SampleID:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;sk163&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;sk101&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;sk142&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;sk181&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;sk166&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;sk150&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;sk107&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;sk159&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;sk177&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;sk162&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;sk119&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;sk179&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;sk125&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Correlation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='antibody_conc_HADDOCK_comparison' name='federated.16opmgt1yru5iq1auel1y0quayui' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16opmgt1yru5iq1auel1y0quayui'>
+            <column caption='Average Concentration' datatype='real' name='[Avg Conc]' role='measure' type='quantitative' />
+            <column caption='HLA-CSP HADDOCK Score' datatype='real' name='[HLA_CSP_HADDOCK]' role='measure' type='quantitative' />
+            <column caption='HLA-TCR HADDOCK Score' datatype='real' name='[HLA_TCR_HADDOCK]' role='measure' type='quantitative' />
+            <column caption='Sample ID' datatype='string' name='[SampleID]' role='dimension' type='nominal' />
+            <column-instance column='[HLA_CSP_HADDOCK]' derivation='Min' name='[min:HLA_CSP_HADDOCK:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HLA_TCR_HADDOCK]' derivation='Min' name='[min:HLA_TCR_HADDOCK:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[moi]' role='measure' type='quantitative' />
+            <column-instance column='[Avg Conc]' derivation='None' name='[none:Avg Conc:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SampleID]' derivation='None' name='[none:SampleID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[moi]' derivation='None' name='[none:moi:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[weighted_avg_HLA_CSP_HADDOCK]' derivation='None' name='[none:weighted_avg_HLA_CSP_HADDOCK:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[weighted_avg_HLA_CSP_HADDOCK]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16opmgt1yru5iq1auel1y0quayui].[Exclusions (Avg Conc,Sample ID)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:Avg Conc:qk]' />
+                <groupfilter function='level-members' level='[none:SampleID:nk]' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:Avg Conc:qk]' member='74080.796513653448' />
+                <groupfilter function='member' level='[none:SampleID:nk]' member='&quot;sk119&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.16opmgt1yru5iq1auel1y0quayui].[Exclusions (Avg Conc,Sample ID,weighted_avg_HLA_CSP_HADDOCK)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:Avg Conc:qk]' />
+                <groupfilter function='level-members' level='[none:SampleID:nk]' />
+                <groupfilter function='level-members' level='[none:weighted_avg_HLA_CSP_HADDOCK:qk]' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:Avg Conc:qk]' member='399052.38283089519' />
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:SampleID:nk]' member='&quot;sk101&quot;' />
+                  <groupfilter function='member' level='[none:weighted_avg_HLA_CSP_HADDOCK:qk]' member='-66.299999999999997' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.16opmgt1yru5iq1auel1y0quayui].[Exclusions (Avg Conc,Sample ID,weighted_avg_HLA_CSP_HADDOCK)]</column>
+            <column>[federated.16opmgt1yru5iq1auel1y0quayui].[Exclusions (Avg Conc,Sample ID)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.16opmgt1yru5iq1auel1y0quayui].[none:Avg Conc:qk]' field-type='quantitative' max='65649.073743370784' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.16opmgt1yru5iq1auel1y0quayui].[min:HLA_CSP_HADDOCK:qk]' scope='cols' value='Best HLA-CSP HADDOCK Score' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.16opmgt1yru5iq1auel1y0quayui].[min:HLA_CSP_HADDOCK:qk]' field-type='quantitative' scope='cols' type='space' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.16opmgt1yru5iq1auel1y0quayui].[min:HLA_TCR_HADDOCK:qk]' field-type='quantitative' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.16opmgt1yru5iq1auel1y0quayui].[min:HLA_TCR_HADDOCK:qk]' scope='cols' value='Best HLA-TCR HADDOCK Score' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.16opmgt1yru5iq1auel1y0quayui].[none:SampleID:nk]' />
+              <text column='[federated.16opmgt1yru5iq1auel1y0quayui].[none:SampleID:nk]' />
+              <text column='[federated.16opmgt1yru5iq1auel1y0quayui].[none:moi:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='log'>
+              <excluded-factors>
+                <column>[federated.16opmgt1yru5iq1auel1y0quayui].[none:SampleID:nk]</column>
+              </excluded-factors>
+            </trendline>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;[federated.16opmgt1yru5iq1auel1y0quayui].[none:SampleID:nk]&gt;&#10;</run>
+                <run fontsize='8'>(MOI: &lt;[federated.16opmgt1yru5iq1auel1y0quayui].[sum:moi:qk]&gt;)</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.16opmgt1yru5iq1auel1y0quayui].[min:HLA_CSP_HADDOCK:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.16opmgt1yru5iq1auel1y0quayui].[none:SampleID:nk]' />
+              <text column='[federated.16opmgt1yru5iq1auel1y0quayui].[none:SampleID:nk]' />
+              <text column='[federated.16opmgt1yru5iq1auel1y0quayui].[none:moi:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='true' exclude-intercept='false' fit='log'>
+              <excluded-factors>
+                <column>[federated.16opmgt1yru5iq1auel1y0quayui].[none:SampleID:nk]</column>
+              </excluded-factors>
+            </trendline>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;[federated.16opmgt1yru5iq1auel1y0quayui].[none:SampleID:nk]&gt;&#10;</run>
+                <run fontsize='8'>(MOI: </run>
+                <run fontsize='8'>&lt;[federated.16opmgt1yru5iq1auel1y0quayui].[none:moi:qk]&gt;</run>
+                <run fontsize='8'>)</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.16opmgt1yru5iq1auel1y0quayui].[min:HLA_TCR_HADDOCK:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.16opmgt1yru5iq1auel1y0quayui].[none:SampleID:nk]' />
+              <text column='[federated.16opmgt1yru5iq1auel1y0quayui].[none:SampleID:nk]' />
+              <text column='[federated.16opmgt1yru5iq1auel1y0quayui].[none:moi:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='log'>
+              <excluded-factors>
+                <column>[federated.16opmgt1yru5iq1auel1y0quayui].[none:SampleID:nk]</column>
+              </excluded-factors>
+            </trendline>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;[federated.16opmgt1yru5iq1auel1y0quayui].[none:SampleID:nk]&gt;&#10;</run>
+                <run fontsize='8'>(MOI: </run>
+                <run fontsize='8'>&lt;[federated.16opmgt1yru5iq1auel1y0quayui].[none:moi:qk]&gt;</run>
+                <run fontsize='8'>)</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16opmgt1yru5iq1auel1y0quayui].[none:Avg Conc:qk]</rows>
+        <cols>([federated.16opmgt1yru5iq1auel1y0quayui].[min:HLA_CSP_HADDOCK:qk] + [federated.16opmgt1yru5iq1auel1y0quayui].[min:HLA_TCR_HADDOCK:qk])</cols>
+      </table>
+      <simple-id uuid='{981CAFD8-20A1-40EB-AE3B-98C4F54C8DD0}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='98000' id='3' name='Correlation' show-title='false' w='98400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='9500' id='8' type='text' w='23300' x='7700' y='2250'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000'>R-Squared:        </run>
+            <run fontcolor='#000000'>0.308726</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#000000'>p-value:        </run>
+            <run fontcolor='#000000'>0.0759562</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='9625' id='9' type='text' w='19500' x='53600' y='2375'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000'>R-Squared:        </run>
+            <run fontcolor='#000000'>0.0403553</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#000000'>p-value:        </run>
+            <run fontcolor='#000000'>0.553658</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='13' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='12' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Correlation' show-title='false' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='9500' id='8' type='text' w='23300' x='7700' y='2250'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000'>R-Squared:        </run>
+                    <run fontcolor='#000000'>0.308726</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000'>p-value:        </run>
+                    <run fontcolor='#000000'>0.0759562</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='9625' id='9' type='text' w='19500' x='53600' y='2375'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000'>R-Squared:        </run>
+                    <run fontcolor='#000000'>0.0403553</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000'>p-value:        </run>
+                    <run fontcolor='#000000'>0.553658</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DB2DA423-1EE0-4A59-BE8E-A47449A28247}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Correlation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='6' param='[federated.16opmgt1yru5iq1auel1y0quayui].[none:SampleID:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16opmgt1yru5iq1auel1y0quayui].[none:Haplotype:nk]</field>
+            <field>[federated.16opmgt1yru5iq1auel1y0quayui].[none:SampleID:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{59883D58-93DC-4271-A618-1C2E043FD3CB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Correlation'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.16opmgt1yru5iq1auel1y0quayui].[none:SampleID:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{26816F66-907B-419B-ADC9-18BAD96164EE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Correlation' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
