@@ -44,22 +44,40 @@ plot( sizeFactors(DESeq.ds), colSums(counts(DESeq.ds)), # assess them
 log.norm.counts <- log2(counts(DESeq.ds, normalized = TRUE))
 
 ##########
-CSP_data <- read_csv("../CSP_sequence_analysis/finalTab_csp.csv") %>% 
-  select(SampleID, Haplotype, Reads) %>% 
+
+reads_data <- read_tsv("../CSP_sequence_analysis/output/demultiplexMarkerSummary.txt") %>% 
+  filter(MarkerID == "csp") %>% 
+  select(SampleID, numReadOut) %>% 
+  mutate(SampleID = str_split(SampleID, "-", n = 2) %>% sapply(head, 1))
+
+
+
+# CSP_data <- read_csv("../CSP_sequence_analysis/finalTab_csp.csv") %>% 
+#   select(SampleID, Haplotype, Reads) %>% 
+#   filter(! Haplotype %in% c("Chimera", "Indels", "Noise", "Singelton")) %>% ## Only True Haplotypes
+#   mutate(SampleID = str_split(SampleID, "-", n = 2) %>% sapply(head, 1)) %>% 
+#   filter(SampleID %in% antibody_data$SampleID) %>% 
+#   inner_join(reads_data, by = "SampleID") %>% 
+#   mutate(expression = Reads/numReadOut) %>% 
+#   select(SampleID, Haplotype, expression)
+
+ 
+CSP_data <- read_csv("../CSP_sequence_analysis/finalTab_csp.csv") %>%
+  select(SampleID, Haplotype, Reads) %>%
   filter(! Haplotype %in% c("Chimera", "Indels", "Noise", "Singelton")) %>% ## Only True Haplotypes
-  # mutate(Reads = Reads / exp(mean(log(Reads[Reads > 0])))) %>%  ## Geometric Mean Ratio 
-  pivot_wider(names_from = "Haplotype", values_from = "Reads", values_fill = 0) %>% 
-  mutate(SampleID = str_split(SampleID, "-", n = 2) %>% sapply(head, 1)) %>% 
-  filter(SampleID %in% antibody_data$SampleID) %>% 
+  # mutate(Reads = Reads / exp(mean(log(Reads[Reads > 0])))) %>%  ## Geometric Mean Ratio
+  pivot_wider(names_from = "Haplotype", values_from = "Reads", values_fill = 0) %>%
+  mutate(SampleID = str_split(SampleID, "-", n = 2) %>% sapply(head, 1)) %>%
+  filter(SampleID %in% antibody_data$SampleID) %>%
   # mutate(TotalReads = rowSums(select_if(., is.numeric), na.rm = TRUE))
-  gather(variable, value, -SampleID) %>% 
-  group_by(SampleID) %>% 
-  mutate(percentage = value/sum(value)) %>% 
-  select(-value) %>% 
-  spread(variable, percentage) %>% 
-  ungroup(SampleID) %>% 
+  gather(variable, value, -SampleID) %>%
+  group_by(SampleID) %>%
+  mutate(percentage = value/sum(value)) %>%
+  select(-value) %>%
+  spread(variable, percentage) %>%
+  ungroup(SampleID) %>%
   # mutate(TotalReads = rowSums(select_if(., is.numeric), na.rm = TRUE))
-  pivot_longer(cols = starts_with("csp-"), names_to = "Haplotype", values_to = "expression") %>% 
+  pivot_longer(cols = starts_with("csp-"), names_to = "Haplotype", values_to = "expression") %>%
   filter(expression > 0)
 
 
@@ -77,7 +95,13 @@ HADDOCK_data <- read_xlsx("../CSP_sequence_analysis/protein/HADDOCK_Results.xlsx
 comparison_data <- CSP_data %>%
   inner_join(antibody_data, by = "SampleID") %>% 
   mutate(weighted_avg_conc = expression * as.numeric(`Avg Conc`)) %>% 
-  inner_join(HADDOCK_data, by = "Haplotype") 
+  inner_join(HADDOCK_data, by = "Haplotype") %>%
+  mutate(weighted_HLA_CSP_HADDOCK = expression * HLA_CSP_HADDOCK,
+         weighted_HLA_TCR_HADDOCK = expression * HLA_TCR_HADDOCK) %>% 
+  group_by(SampleID) %>%
+  mutate(weighted_avg_HLA_CSP_HADDOCK = sum(weighted_HLA_CSP_HADDOCK),
+         weighted_avg_HLA_TCR_HADDOCK = sum(weighted_HLA_TCR_HADDOCK))  
+  # filter(expression == max(expression))
 
 write_csv(comparison_data, "antibody_conc_HADDOCK_comparison.csv")
 
