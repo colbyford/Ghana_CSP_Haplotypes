@@ -20,7 +20,7 @@ reads_data <- read_tsv("../CSP_sequence_analysis/output/demultiplexMarkerSummary
   mutate(SampleID = str_split(SampleID, "-", n = 2) %>% sapply(head, 1))
 
 
-
+## Expression Percentage based on Total Reads
 # CSP_data <- read_csv("../CSP_sequence_analysis/finalTab_csp.csv") %>%
 #   select(SampleID, Haplotype, Reads) %>%
 #   filter(! Haplotype %in% c("Chimera", "Indels", "Noise", "Singelton")) %>% ## Only True Haplotypes
@@ -30,7 +30,7 @@ reads_data <- read_tsv("../CSP_sequence_analysis/output/demultiplexMarkerSummary
 #   mutate(expression = Reads/numReadOut) %>%
 #   select(SampleID, Haplotype, expression)
 
- 
+## Expression Percentage based on Total Haplotype Reads
 CSP_data <- read_csv("../CSP_sequence_analysis/finalTab_csp.csv") %>%
   select(SampleID, Haplotype, Reads) %>%
   filter(! Haplotype %in% c("Chimera", "Indels", "Noise", "Singelton")) %>% ## Only True Haplotypes
