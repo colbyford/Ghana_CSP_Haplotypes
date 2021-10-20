@@ -53,6 +53,8 @@ CSP_data <- read_csv("../CSP_sequence_analysis/finalTab_csp.csv") %>%
   # filter(expression == max(expression))
 
 
+qPCR_data <- read_xlsx("qPCR_results.xlsx")
+
 
 HADDOCK_data <- read_xlsx("../CSP_sequence_analysis/protein/HADDOCK_Results.xlsx") %>% 
   filter(Region == "Th2R") %>% 
@@ -66,6 +68,7 @@ HADDOCK_data <- read_xlsx("../CSP_sequence_analysis/protein/HADDOCK_Results.xlsx
 
 comparison_data <- CSP_data %>%
   inner_join(antibody_data, by = "SampleID") %>% 
+  inner_join(qPCR_data, by = "SampleID") %>% 
   mutate(weighted_avg_conc = expression * as.numeric(`Avg Conc`)) %>% 
   inner_join(HADDOCK_data, by = "Haplotype") %>%
   # group_by(SampleID) %>% 
