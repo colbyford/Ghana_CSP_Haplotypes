@@ -4,13 +4,15 @@ library(stringr)
 library(tidyr)
 library(DECIPHER)
 library(ShortRead)
-library(msa)
+
+cwd <- "../dePlexMarker/"
 
 ## Get Sample File Information
 
 deplex_samples <- list.files("../dePlexMarker/") %>% 
   data.frame() %>% 
   rename(FileName = ".") %>% 
+  mutate(SampleName = str_extract(FileName, "[A-Za-z0-9]+-[0-9]_[A-Z0-9]+_[A-Za-z0-9]+_[a-z0-9]+")) %>% 
   separate(FileName, into = c("SampleID", "meta"), sep = "-", extra = 'merge', remove = FALSE) %>% 
   separate(meta, into = c("rm1", "rm2", "rm3", "gene", "direction"), sep = "_", extra = "drop", remove = TRUE) %>%
   mutate(direction = str_sub(direction,1,1)) %>% 
@@ -21,7 +23,6 @@ deplex_samples <- list.files("../dePlexMarker/") %>%
   arrange(size, .by_group = TRUE) %>%
   top_n(4) %>% 
   select(!size)
-
 
 csp_F_samples <- deplex_samples %>%
   filter(gene == "csp") %>%
@@ -36,7 +37,7 @@ csp_R_samples <- deplex_samples %>%
   rename("FileR_csp" = "FileName")
 
 csp_samples <- csp_F_samples %>% full_join(csp_R_samples)
-
+csp_ref <- readFasta("../../meta_data/csp_reference.fasta") %>% sread()
 
 msp1_F_samples <- deplex_samples %>%
   filter(gene == "msp1") %>%
@@ -51,22 +52,52 @@ msp1_R_samples <- deplex_samples %>%
   rename("FileR_msp1" = "FileName")
 
 msp1_samples <- msp1_F_samples %>% full_join(msp1_R_samples)
-
-sample_files <- csp_samples %>% full_join(msp1_samples)
-
-cwd <- "../dePlexMarker/"
+msp1_ref <- readFasta("../../meta_data/msp-1_reference.fasta") %>% sread()
 
 ## Loop Through Files to Generate Consensus FASTAs
-for (i in 1:nrow(sample_files)){
-  sampleid <- sample_files$SampleID[i]
+## CSP
+for (i in 1:nrow(csp_samples)){
+  samplename <- csp_samples$SampleName[i]
+  sampleid <- csp_samples$SampleID[i]
   
-  csp_F <- readFastq(paste0(cwd, sample_files$FileF_csp[i])) %>% sread() %>% msa(method = "Muscle", verbose = TRUE) %>% ConsensusSequence(ambiguity = FALSE)
-  csp_R <- readFastq(paste0(cwd, sample_files$FileR_csp[i])) %>% sread() %>% reverseComplement() %>% ConsensusSequence(ambiguity = FALSE)
+  cat("Getting CSP consensus sequence for sample:", samplename, "\n")
+
+  csp_F <- readFastq(paste0(cwd, csp_samples$FileF_csp[i])) %>%
+    sread() %>% 
+    ConsensusSequence(ambiguity = FALSE)
   
-  csp <- append(csp_F, csp_R)
+  # csp_R <- readFastq(paste0(cwd, csp_samples$FileR_csp[i])) %>%
+  #   sread() %>%
+  #   reverseComplement() %>%
+  #   ConsensusSequence(ambiguity = FALSE)
+
+  csp_ali <- pairwiseAlignment(csp_ref, csp_F) %>% aligned()
+  names(csp_ali) <- sampleid
   
-  csp_cons <- ConsensusSequence(csp, ambiguity = FALSE)
+  writeFasta(csp_ali, file = paste0(samplename,"_consensus.fasta"))
+}
+
+
+## MSP-1
+for (i in 1:nrow(msp1_samples)){
+  samplename <- msp1_samples$SampleName[i]
+  sampleid <- msp1_samples$SampleID[i]
   
-  csp_cons
+  cat("Getting MSP-1 consensus sequence for sample:", samplename, "\n")
+  
+  msp1_F <- readFastq(paste0(cwd, msp1_samples$FileF_msp1[i])) %>%
+    sread() %>% 
+    ConsensusSequence(ambiguity = FALSE)
+  
+  # msp1_R <- readFastq(paste0(cwd, msp1_samples$FileR_msp1[i])) %>%
+  #   sread() %>%
+  #   reverseComplement() %>%
+  #   ConsensusSequence(ambiguity = FALSE)
+  
+  msp1_ali <- pairwiseAlignment(msp1_ref, msp1_F) %>% aligned()
+  names(msp1_ali) <- sampleid
+  
+  writeFasta(msp1_ali, file = paste0(samplename,"_consensus.fasta"))
+
 }
 
