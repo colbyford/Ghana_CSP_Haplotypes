@@ -1,6 +1,6 @@
 # Protein structural analysis of Ghanian _Plasmodium falciparum_ haplotypes with human immunoproteins explains variations in vaccine efficacy
 
-<p align="right">Cheikh Cambel Dieng, Colby T. Ford, Dickson Doniou, Jennifer Huynh, Kovidh Vegesna, <br>Anita Lerch, Daniel Janies, Linda Amoah, Yaw Afrane, and Eugenia Lo</p>
+<p align="right">Cheikh Cambel Dieng, Colby T. Ford, Anita Lerch, Dickson Doniou, Jennifer Huynh, Kovidh Vegesna, <br>Jun-tao Guo, Daniel Janies, Linda Amoah, Yaw Afrane, and Eugenia Lo</p>
 
 
 ## Abstract
@@ -24,7 +24,7 @@ Today, the RTS,S malaria vaccine only provides partial protection (~36%) against
   - Protein Modeling Resources: [protein/](/CSP_sequence_analysis/protein/)
     - HADDOCK Docking Results: [HADDOCK_Results.xlsx](/CSP_sequence_analysis/protein/HADDOCK_Results.xlsx)
     - CD4+/Th2R Protein Docking Files: [CD4_Th2R/](/CSP_sequence_analysis/protein/CD4_Th2R/)
-    - CD8+/Th3R Protein Docking Files: [CD4_Th2R/](/CSP_sequence_analysis/protein/CD8_Th23/)
+    - CD8+/Th3R Protein Docking Files: [CD8_Th3R/](/CSP_sequence_analysis/protein/CD8_Th23/)
 - [MSP1_sequence_analysis/](MSP1_sequence_analysis/)
   - Final List of MSP1 Haplotypes: [finalTab_msp.csv](/MSP1_sequence_analysis/finalTab_msp.csv)
   - Haplotype Creation Script: [MalariaHaplotyping_NGmerge_script.R](/MSP1_sequence_analysis/MalariaHaplotyping_NGmerge_script.R)
