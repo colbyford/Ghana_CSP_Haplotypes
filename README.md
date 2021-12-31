@@ -1,5 +1,7 @@
 # Protein structural analysis of Ghanian _Plasmodium falciparum_ haplotypes with human immunoproteins explains variations in vaccine efficacy
 
+[![DOI](https://zenodo.org/badge/DOI/10.1101/2021.12.29.474460.svg)](https://www.biorxiv.org/content/10.1101/2021.12.29.474460)
+
 <p align="right">Cheikh Cambel Dieng, Colby T. Ford, Anita Lerch, Dickson Doniou, Jennifer Huynh, <br>Kovidh Vegesna, Jun-tao Guo, Daniel Janies, Linda Amoah, Yaw Afrane, and Eugenia Lo</p>
 
 
