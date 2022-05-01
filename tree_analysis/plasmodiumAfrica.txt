@@ -1,0 +1,6 @@
+COUNTRY SEARCH:
+- Entries = 2564
+- Missing localities = 909 (35.45241809672387%)
+- Entries in selected localities = 774 (30.187207488299535%)
+- Entries in other localities = 881 (34.3603744149766%)
+---
