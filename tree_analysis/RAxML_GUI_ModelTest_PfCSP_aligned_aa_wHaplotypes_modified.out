@@ -1,0 +1,177 @@
+--------------------------------------------------------------------------------
+ModelTest-NG v0.1.7
+
+Input data:
+  MSA:        C:\Users\Colby\Documents\GitHub\Ghana_CSP_Haplotypes\tree_analysis\PfCSP_aligned_aa_wHaplotypes_modified.fasta
+  Tree:       Maximum parsimony
+    file:           -
+  #taxa:            1894
+  #sites:           109
+  #patterns:        95
+  Max. thread mem:  440 MB
+
+Output:
+  Log:           C:\Users\Colby\Documents\GitHub\Ghana_CSP_Haplotypes\tree_analysis\RAxML_GUI_ModelTest_PfCSP_aligned_aa_wHaplotypes_modified.log
+  Starting tree: C:\Users\Colby\Documents\GitHub\Ghana_CSP_Haplotypes\tree_analysis\RAxML_GUI_ModelTest_PfCSP_aligned_aa_wHaplotypes_modified.tree
+  Results:       C:\Users\Colby\Documents\GitHub\Ghana_CSP_Haplotypes\tree_analysis\RAxML_GUI_ModelTest_PfCSP_aligned_aa_wHaplotypes_modified.out
+
+Selection options:
+  # protein matrices: 19
+  # protein models:   152
+  include model parameters:
+    Uniform:         true
+    p-inv (+I):      true
+    gamma (+G):      true
+    both (+I+G):     true
+    free rates (+R): false
+    fixed freqs:     true
+    estimated freqs: false
+    #categories:     4
+  gamma rates mode:   mean
+  asc bias:           none
+  epsilon (opt):      0.01
+  epsilon (par):      0.05
+  keep branches:      false
+
+Additional options:
+  verbosity:        very low
+  threads:          24/24
+  RNG seed:         12345
+  subtree repeats:  enabled
+--------------------------------------------------------------------------------
+
+BIC       model              K            lnL          score          delta    weight
+--------------------------------------------------------------------------------
+       1  CPREV+G4           1     -3291.4232     24344.2895         0.0000    0.9567
+       2  CPREV+I+G4         2     -3292.1721     24350.4786         6.1891    0.0433
+       3  HIVB+I+G4          2     -3300.2648     24366.6641        22.3746    0.0000
+       4  HIVB+G4            1     -3305.7211     24372.8852        28.5957    0.0000
+       5  HIVW+G4            1     -3307.7185     24376.8800        32.5905    0.0000
+       6  HIVW+I+G4          2     -3305.6690     24377.4724        33.1829    0.0000
+       7  WAG+G4             1     -3321.3781     24404.1994        59.9098    0.0000
+       8  WAG+I+G4           2     -3319.2212     24404.5768        60.2873    0.0000
+       9  STMTREV+G4         1     -3325.7942     24413.0314        68.7419    0.0000
+      10  STMTREV+I+G4       2     -3323.4644     24413.0632        68.7736    0.0000
+--------------------------------------------------------------------------------
+Best model according to BIC
+---------------------------
+Model:              CPREV+G4
+lnL:                -3291.4232
+Frequencies:        0.0755 0.0621 0.0410 0.0371 0.0091 0.0382 0.0495 0.0838 0.0246 0.0806 0.1011 0.0504 0.0220 0.0506 0.0431 0.0622 0.0543 0.0181 0.0307 0.0660
+Inv. sites prop:    -
+Gamma shape:        0.3093
+Score:              24344.2895
+Weight:             0.9567
+---------------------------
+Parameter importances
+---------------------------
+P.Inv:              0.0000
+Gamma:              0.9567
+Gamma-Inv:          0.0433
+Frequencies:        0.0000
+---------------------------
+Model averaged estimates
+---------------------------
+P.Inv:              0.3703
+Alpha:              0.3093
+Alpha-P.Inv:        0.5944
+P.Inv-Alpha:        0.2544
+Frequencies:        0.0367 0.0186 0.1567 0.0571 0.0381 0.0305 0.0786 0.0386 0.0176 0.0759 0.0433 0.1047 0.0240 0.0091 0.0547 0.0945 0.0219 0.0099 0.0205 0.0690 
+
+Commands:
+  > phyml  -i C:\Users\Colby\Documents\GitHub\Ghana_CSP_Haplotypes\tree_analysis\PfCSP_aligned_aa_wHaplotypes_modified.fasta -d aa -m CPREV -f m -v 0 -a e -c 4 -o tlr
+  > raxmlHPC-SSE3 -s C:\Users\Colby\Documents\GitHub\Ghana_CSP_Haplotypes\tree_analysis\PfCSP_aligned_aa_wHaplotypes_modified.fasta -m PROTGAMMACPREV -n EXEC_NAME -p PARSIMONY_SEED
+  > raxml-ng --msa C:\Users\Colby\Documents\GitHub\Ghana_CSP_Haplotypes\tree_analysis\PfCSP_aligned_aa_wHaplotypes_modified.fasta --model CPREV+G4
+  > paup -s C:\Users\Colby\Documents\GitHub\Ghana_CSP_Haplotypes\tree_analysis\PfCSP_aligned_aa_wHaplotypes_modified.fasta
+  > iqtree -s C:\Users\Colby\Documents\GitHub\Ghana_CSP_Haplotypes\tree_analysis\PfCSP_aligned_aa_wHaplotypes_modified.fasta -m CPREV+G4
+
+AIC       model              K            lnL          score          delta    weight
+--------------------------------------------------------------------------------
+       1  CPREV+G4           1     -3291.4232     14154.8464         0.0000    0.8518
+       2  CPREV+I+G4         2     -3292.1721     14158.3442         3.4977    0.1482
+       3  HIVB+I+G4          2     -3300.2648     14174.5297        19.6832    0.0000
+       4  HIVB+G4+F         20     -3286.3669     14182.7338        27.8874    0.0000
+       5  HIVB+G4            1     -3305.7211     14183.4421        28.5957    0.0000
+       6  HIVB+I+G4+F       21     -3285.7738     14183.5476        28.7012    0.0000
+       7  HIVW+I+G4          2     -3305.6690     14185.3380        30.4915    0.0000
+       8  HIVW+G4            1     -3307.7185     14187.4369        32.5905    0.0000
+       9  WAG+I+G4+F        21     -3294.9441     14201.8882        47.0418    0.0000
+      10  WAG+G4+F          20     -3297.4030     14204.8060        49.9596    0.0000
+--------------------------------------------------------------------------------
+Best model according to AIC
+---------------------------
+Model:              CPREV+G4
+lnL:                -3291.4232
+Frequencies:        0.0755 0.0621 0.0410 0.0371 0.0091 0.0382 0.0495 0.0838 0.0246 0.0806 0.1011 0.0504 0.0220 0.0506 0.0431 0.0622 0.0543 0.0181 0.0307 0.0660
+Inv. sites prop:    -
+Gamma shape:        0.3093
+Score:              14154.8464
+Weight:             0.8518
+---------------------------
+Parameter importances
+---------------------------
+P.Inv:              0.0000
+Gamma:              0.8518
+Gamma-Inv:          0.1482
+Frequencies:        0.0000
+---------------------------
+Model averaged estimates
+---------------------------
+P.Inv:              0.3703
+Alpha:              0.3093
+Alpha-P.Inv:        0.5944
+P.Inv-Alpha:        0.2544
+Frequencies:        0.0367 0.0186 0.1567 0.0571 0.0381 0.0305 0.0786 0.0386 0.0176 0.0759 0.0433 0.1047 0.0240 0.0091 0.0547 0.0945 0.0219 0.0099 0.0205 0.0690 
+
+Commands:
+  > phyml  -i C:\Users\Colby\Documents\GitHub\Ghana_CSP_Haplotypes\tree_analysis\PfCSP_aligned_aa_wHaplotypes_modified.fasta -d aa -m CPREV -f m -v 0 -a e -c 4 -o tlr
+  > raxmlHPC-SSE3 -s C:\Users\Colby\Documents\GitHub\Ghana_CSP_Haplotypes\tree_analysis\PfCSP_aligned_aa_wHaplotypes_modified.fasta -m PROTGAMMACPREV -n EXEC_NAME -p PARSIMONY_SEED
+  > raxml-ng --msa C:\Users\Colby\Documents\GitHub\Ghana_CSP_Haplotypes\tree_analysis\PfCSP_aligned_aa_wHaplotypes_modified.fasta --model CPREV+G4
+  > paup -s C:\Users\Colby\Documents\GitHub\Ghana_CSP_Haplotypes\tree_analysis\PfCSP_aligned_aa_wHaplotypes_modified.fasta
+  > iqtree -s C:\Users\Colby\Documents\GitHub\Ghana_CSP_Haplotypes\tree_analysis\PfCSP_aligned_aa_wHaplotypes_modified.fasta -m CPREV+G4
+
+AICc      model              K            lnL          score          delta    weight
+--------------------------------------------------------------------------------
+       1  CPREV              0     -3710.9323  28675011.8646         0.0000    1.0000
+       2  WAG                0     -3736.7540  28675063.5081        51.6435    0.0000
+       3  HIVW               0     -3757.8139  28675105.6278        93.7632    0.0000
+       4  HIVB               0     -3769.0177  28675128.0353       116.1707    0.0000
+       5  LG                 0     -3782.1513  28675154.3026       142.4381    0.0000
+       6  VT                 0     -3782.3262  28675154.6525       142.7879    0.0000
+       7  JTT-DCMUT          0     -3784.2765  28675158.5530       146.6885    0.0000
+       8  JTT                0     -3788.0727  28675166.1454       154.2808    0.0000
+       9  FLU                0     -3795.1026  28675180.2052       168.3406    0.0000
+      10  STMTREV            0     -3803.2400  28675196.4800       184.6154    0.0000
+--------------------------------------------------------------------------------
+Best model according to AICc
+---------------------------
+Model:              CPREV
+lnL:                -3710.9323
+Frequencies:        0.0755 0.0621 0.0410 0.0371 0.0091 0.0382 0.0495 0.0838 0.0246 0.0806 0.1011 0.0504 0.0220 0.0506 0.0431 0.0622 0.0543 0.0181 0.0307 0.0660
+Inv. sites prop:    -
+Gamma shape:        -
+Score:              28675011.8646
+Weight:             1.0000
+---------------------------
+Parameter importances
+---------------------------
+P.Inv:              -
+Gamma:              -
+Gamma-Inv:          -
+Frequencies:        -
+---------------------------
+Model averaged estimates
+---------------------------
+P.Inv:              -
+Alpha:              -
+Alpha-P.Inv:        -
+P.Inv-Alpha:        -
+Frequencies:        -
+
+Commands:
+  > phyml  -i C:\Users\Colby\Documents\GitHub\Ghana_CSP_Haplotypes\tree_analysis\PfCSP_aligned_aa_wHaplotypes_modified.fasta -d aa -m CPREV -f m -v 0 -a 0 -c 1 -o tlr
+  > raxmlHPC-SSE3 -s C:\Users\Colby\Documents\GitHub\Ghana_CSP_Haplotypes\tree_analysis\PfCSP_aligned_aa_wHaplotypes_modified.fasta -m PROTGAMMACPREV -n EXEC_NAME -p PARSIMONY_SEED
+  > raxml-ng --msa C:\Users\Colby\Documents\GitHub\Ghana_CSP_Haplotypes\tree_analysis\PfCSP_aligned_aa_wHaplotypes_modified.fasta --model CPREV
+  > paup -s C:\Users\Colby\Documents\GitHub\Ghana_CSP_Haplotypes\tree_analysis\PfCSP_aligned_aa_wHaplotypes_modified.fasta
+  > iqtree -s C:\Users\Colby\Documents\GitHub\Ghana_CSP_Haplotypes\tree_analysis\PfCSP_aligned_aa_wHaplotypes_modified.fasta -m CPREV
+Done
