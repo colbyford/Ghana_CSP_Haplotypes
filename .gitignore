@@ -39,3 +39,5 @@ vignettes/*.pdf
 .Renviron
 sequence_analysis/protein/old/*
 sequence_analysis/protein/~Figures__1952.twbr
+netMHC_tool/netMHCpan-4.1/data/*
+netMHC_tool/netMHCpan-4.1/Linux_x86_64/*
