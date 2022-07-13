@@ -68,7 +68,17 @@ binders_output <- binders %>%
 write_csv(binders_output, paste0(netmhcii_output_path, "_binders.csv"))
 
 
+## PIVOT Data
+
+binders_output <- read_csv(paste0(netmhcii_output_path, "_binders.csv"))
+
 binders_pvt <- binders_output %>% 
+  mutate(peptide_length  = nchar(Peptide),
+         ensPos = Pos + peptide_length) %>% 
+  ## filter to Th2R Region
+  filter(Pos >= 29,
+         ensPos <= 45) %>% 
+  group_by(MHC, Identity) %>% 
   group_by(MHC, Identity) %>% 
   count(BindLevel) %>% 
   pivot_wider(id_cols = c(MHC, Identity),

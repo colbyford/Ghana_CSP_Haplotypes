@@ -72,8 +72,16 @@ binders_output <- binders %>%
 
 write_csv(binders_output, paste0(netmhc_output_path, "_binders.csv"))
 
+## PIVOT Data
 
-binders_pvt <- binders_output %>% 
+binders_output <- read_csv(paste0(netmhc_output_path, "_binders.csv"))
+
+binders_pvt <- binders_output %>%
+  mutate(peptide_length  = nchar(Peptide),
+         ensPos = Pos + peptide_length) %>% 
+  ## filter to Th3R Region
+  filter(Pos >= 59,
+         ensPos <= 82) %>% 
   group_by(MHC, Identity) %>% 
   count(BindLevel) %>% 
   pivot_wider(id_cols = c(MHC, Identity),
@@ -86,6 +94,5 @@ binders_pvt <- binders_output %>%
     WB_pct = WB/total,
     Binder_pct = (SB + WB)/total
   )
-
 
 write_csv(binders_pvt, paste0(netmhc_output_path, "_binders_pvt.csv"))
