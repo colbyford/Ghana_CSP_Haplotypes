@@ -35,8 +35,6 @@ Today, the RTS,S malaria vaccine only provides partial protection (~36%) against
 ## Data
 All Amplicon-seq paired-end FASTQ files of CSP and MSP-1 genes are available on NCBI SRA: https://www.ncbi.nlm.nih.gov/sra/PRJNA783000
 
-
-
 ## Resources
 
 - HaplotypR pacakge: https://github.com/lerch-a/HaplotypR
