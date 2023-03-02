@@ -1,13 +1,13 @@
-# Protein structural analysis of Ghanian _Plasmodium falciparum_ haplotypes with human immunoproteins explains variations in vaccine efficacy
+# Genetic variations of _Plasmodium falciparum_ circumsporozoite protein and the impact on interactions with human immunoproteins and malaria vaccine efficacy
 
-[![DOI](https://zenodo.org/badge/DOI/10.1101/2021.12.29.474460.svg)](https://www.biorxiv.org/content/10.1101/2021.12.29.474460)
+<p align="right">Cheikh Cambel Dieng, Colby T. Ford, Anita Lerch, Dickson Doniou, Jennifer Huynh, Kovidh Vegesna, <br>Jun-tao Guo, Daniel Janies, Liwang Cui, Linda Amoah, Yaw Afrane, and Eugenia Lo</p>
 
-<p align="right">Cheikh Cambel Dieng, Colby T. Ford, Anita Lerch, Dickson Doniou, Jennifer Huynh, <br>Kovidh Vegesna, Jun-tao Guo, Daniel Janies, Linda Amoah, Yaw Afrane, and Eugenia Lo</p>
+Published in _Infection, Genetics and Evolution_: [![DOI](https://zenodo.org/badge/DOI/10.1016/j.meegid.2023.105418.svg)](https://doi.org/10.1016/j.meegid.2023.105418)
 
 
 ## Abstract
 
-Today, the RTS,S malaria vaccine only provides partial protection (~36%) against _Plasmodium falciparum_ in certain sub-Saharan African countries such as Ghana, though this vaccine previously showed efficacy well above 60\% in previous clinical trials. Our study analyzes the diversity of the _PfCSP_ gene across 88 samples from Ghana and we have derived 27 prevalent haplotypes. We further investigated these haplotypes by understanding how variations in this gene affect protein binding interactions with human immunological proteins (a human leukocyte antigen and a T-cell receptor). By predicting and quantifying these interactions, we can then better understand variations in vaccine efficacy and posit sequence options for next-generation malaria vaccine design.
+In October 2021, the world's first malaria vaccine RTS,S was endorsed by WHO for broad use in children, despite its low efficacy. This study examined polyclonal infections and the associations of parasite genetic variations with binding affinity to human leukocyte antigen (HLA). Multiplicity of infection was determined by amplicon deep sequencing of _PfMSP1_. Genetic variations in _PfCSP_ were examined across 88 samples from Ghana and analyzed together with 1655 _PfCSP_ sequences from other African and non-African isolates. Binding interactions of _PfCSP_ peptide variants and HLA were predicted using NetChop and HADDOCK. High polyclonality was detected among infections, with each infection harboring multiple non-3D7 _PfCSP_ variants. Twenty-seven _PfCSP_ haplotypes were detected in the Ghanaian samples, and they broadly represented _PfCSP_ diversity across Africa. The number of genetic differences between 3D7 and non-3D7 _PfCSP_ variants does not influence binding to HLA. However, CSP peptide length after proteolytic degradation significantly affects its molecular weight and binding affinity to HLA. Despite the high diversity of HLA, the majority of the HLAI and II alleles interacted/bound with all Ghana CSP peptides. Multiple non-3D7 strains among _P. falciparum_ infections could impact the effectiveness of RTS,S. Longer peptides of the Th2R/Th3R CSP regions should be considered in future versions of RTS,S.
 
 <p align="middle"><img src="https://raw.githubusercontent.com/colbyford/Ghana_CSP_Haplotypes/main/CSP_sequence_analysis/protein/CD4_Th2R/renderings/HLA-TCR_csp-reference.png" width="500"></p>
 
