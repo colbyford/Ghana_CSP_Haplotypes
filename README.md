@@ -1,6 +1,6 @@
 # Genetic variations of _Plasmodium falciparum_ circumsporozoite protein and the impact on interactions with human immunoproteins and malaria vaccine efficacy
 
-<p align="right">Cheikh Cambel Dieng, Colby T. Ford, Anita Lerch, Dickson Doniou, Jennifer Huynh, Kovidh Vegesna, <br>Jun-tao Guo, Daniel Janies, Liwang Cui, Linda Amoah, Yaw Afrane, and Eugenia Lo</p>
+<p align="right"><strong>Cheikh Cambel Dieng</strong>, <strong>Colby T. Ford</strong>, Anita Lerch, Dickson Doniou, Jennifer Huynh, Kovidh Vegesna, <br>Jun-tao Guo, Daniel Janies, Liwang Cui, Linda Amoah, Yaw Afrane, and Eugenia Lo</p>
 
 Published in _Infection, Genetics and Evolution_: [![DOI](https://zenodo.org/badge/DOI/10.1016/j.meegid.2023.105418.svg)](https://doi.org/10.1016/j.meegid.2023.105418)
 
